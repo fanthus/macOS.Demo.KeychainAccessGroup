@@ -23,7 +23,7 @@
     NSLog(@"sender = %@",sender);
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:0];
     [dict setObject:(__bridge NSString *)kSecClassGenericPassword forKey:(__bridge NSString *)kSecClass];
-    [dict setObject:(__bridge id)kCFBooleanTrue forKey:(__bridge NSString *)kSecAttrSynchronizable];
+    [dict setObject:(__bridge id)kCFBooleanTrue forKey:(__bridge NSString *)kSecAttrSynchronizable]; //different from iOS,open icloud sync.
     [dict setObject:@"DZQ5YNVEU2.fan" forKey:(__bridge NSString *)kSecAttrAccessGroup];
     [dict setObject:@"this is account" forKey:(__bridge NSString *)kSecAttrAccount];
     [dict setObject:@"this is service" forKey:(__bridge NSString *)kSecAttrService];

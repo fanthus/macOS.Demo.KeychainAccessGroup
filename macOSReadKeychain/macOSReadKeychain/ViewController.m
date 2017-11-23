@@ -25,7 +25,7 @@
     NSMutableDictionary *searchDict = [NSMutableDictionary dictionaryWithCapacity:0];
     [searchDict setObject:@"this is account" forKey:(__bridge NSString *)kSecAttrAccount];
     [searchDict setObject:(__bridge id)kSecClassGenericPassword forKey:(__bridge id)kSecClass];
-    [searchDict setObject:(__bridge id)kCFBooleanTrue forKey:(__bridge NSString *)kSecAttrSynchronizable];
+    [searchDict setObject:(__bridge id)kCFBooleanTrue forKey:(__bridge NSString *)kSecAttrSynchronizable]; //different from iOS
     [searchDict setObject:@"DZQ5YNVEU2.fan" forKey:(__bridge NSString *)kSecAttrAccessGroup];
     [searchDict setObject:(__bridge id)kSecMatchLimitOne forKey:(__bridge id)kSecMatchLimit];
     [searchDict setObject:(id)kCFBooleanTrue forKey:(__bridge id)kSecReturnAttributes];
